@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    @if $letra == chica{
+        font-size: 0.7rem;
+    }@else if $letra == medium{
+        font-size: 1.2rem;
+    }@else if $letra == large{
+        font-size: 2rem;
+    }@else{
+        font-size: 3rem;
+    }
+}
+
+
+
+body{
+    font-family: cursive;
+}
+
+main{
+    .noDisponible{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .novedades{
+        h2{
+            font-size: 30px;
+            color: $color-blanco;
+        }
+    }
+    .card{
+        .card-body{
+            text-align:  center;
+        }
+    }
+
+}
